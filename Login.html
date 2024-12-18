@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Buy now the latest 2024 mobiles at the cheapest prices">
+    <meta name="description" content="Contact us: 01016313032 - 01011890006">
+    <link rel="icon" type="image/png" href="Icon.jpg">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Login to ElKabeir Awy Shop</h1>
+    </header>
+
+    <main>
+        <section id="signup">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>How to contact us</h2>
+        <p>
+            <a href="https://www.facebook.com/p/%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1-%D8%A3%D9%88%D9%8A-100063785444386/"
+                target="_blank"><img src="facebook-3-2.svg" alt="Facebook"></a>
+            <a href="https://wa.me/qr/25ADICCYXMXWC1" target="_blank"><img src="whatsapp-8.svg" alt="Whatsapp"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="official-gmail-icon-2020-.svg" alt="Gmail"></a>
+            <a href="https://www.google.com/maps/place/3QW5%2BV59+%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1+%D8%A7%D9%88%D9%89+%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84+%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9,+%D8%A7%D9%84%D8%AD%D8%B3%D9%8A%D9%86%D9%8A%D8%8C+%D9%82%D8%B3%D9%85+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7%D8%8C+%D8%A3%D9%88%D9%84+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7+2451152%E2%80%AD/data=!4m2!3m1!1s0x145b25ed04a4e89b:0x94b5b7af34ca813?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0NC4xMDUYACCenQoqbCw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICRUc%3D"
+                target="_blank"><img src="logo-google-maps.svg" alt="Google Maps"></a>
+        </p>
+        <p style="text-align:center;">© 2024 ElKabeir Awy Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "admin" && password === "1234") {
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+
+</html>
