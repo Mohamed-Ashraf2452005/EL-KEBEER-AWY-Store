@@ -44,20 +44,17 @@
         <p style="text-align:center;">© 2024 ElKabeir Awy Shop. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function (event) {
-            event.preventDefault(); 
+   <script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+        event.preventDefault(); 
 
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
 
-            if (username === "admin" && password === "1234") {
-                window.location.href = "Login.html";
-            } else {
-                alert("Invalid username or password. Please try again.");
-            }
-        });
-    </script>
+        // توجيه المستخدم إلى صفحة Login.html 
+        window.location.href = "Login.html";
+    });
+</script>
 </body>
 
 </html>
