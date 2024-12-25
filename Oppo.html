@@ -20,7 +20,7 @@
         <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Brands.html">Brands</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
             <li><a href="index.html">Login</a></li>
             <li><a href="Submit.html">Sign Up</a></li>
         </ul>
@@ -99,6 +99,14 @@
                 target="_blank"><img src="logo-google-maps.svg" alt="Gmail"></a>
         </p>
     </footer>
+    <script>
+        document.getElementById('contact-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
